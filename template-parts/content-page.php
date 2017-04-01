@@ -8,10 +8,13 @@
  */
 ?>
 
+<div class="site-branding">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" />
+</div>
+
+<?php do_action('slideshow_deploy', '35'); ?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
 
 	<?php twentysixteen_post_thumbnail(); ?>
 

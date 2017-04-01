@@ -1,17 +1,14 @@
 /*
-Theme Name: Twenty Sixteen
+Theme Name: City Planter (Child of Twenty Sixteen)
 Theme URI: https://wordpress.org/themes/twentysixteen/
-Author: the WordPress team
-Author URI: https://wordpress.org/
-Description: Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.
+Author: the WordPress team / Vince Alvare
+Author URI: http://www.vincealvare.com
+Description: Child of the Twenty Sixteen theme.
 Version: 1.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
 Text Domain: twentysixteen
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
 */
 
 
@@ -1532,6 +1529,7 @@ blockquote:after,
 
 .site-inner {
 	margin: 0 auto;
+    padding-top:30px;
 	max-width: 1320px;
 	position: relative;
 }
@@ -1575,11 +1573,13 @@ blockquote:after,
 }
 
 .site-branding {
-	margin: 0.875em auto 0.875em 0;
+	margin: 0.875em auto;
 	/* Avoid overflowing wide custom logo in small screens in Firefox and IEs */
 	max-width: 100%;
 	min-width: 0;
 	overflow: hidden;
+    width:100%;
+    padding:0px 45px 25px 25px;
 }
 
 .custom-logo-link {
@@ -1587,7 +1587,7 @@ blockquote:after,
 }
 
 .custom-logo {
-	max-width: 180px;
+	max-width: 400px;
 }
 
 .site-title {
@@ -1680,6 +1680,10 @@ blockquote:after,
 .site-main > article {
 	margin-bottom: 3.5em;
 	position: relative;
+}
+
+.entry-content {
+    margin-top:30px;
 }
 
 .entry-header,
@@ -2391,6 +2395,7 @@ body.search-no-results .page-header {
  */
 
 .sidebar {
+    margin-top:10px;
 	margin-bottom: 3.5em;
 	padding: 0 7.6923%;
 }
@@ -2409,6 +2414,8 @@ body.search-no-results .page-header {
 	font-size: 13px;
 	font-size: 0.8125rem;
 	line-height: 1.6153846154;
+    text-align:center;
+    width:100%;
 }
 
 .site-info a {
@@ -2601,7 +2608,6 @@ p > video {
 	display: none;
 }
 
-
 /**
  * 13.0 - Multisites
  */
@@ -2756,7 +2762,7 @@ p > video {
 	}
 
 	.site-main {
-		margin-bottom: 5.25em;
+		margin-bottom: 3.5em;
 	}
 
 	.site-header {
@@ -2768,8 +2774,12 @@ p > video {
 		margin-bottom: 1.3125em;
 	}
 
+    .site-branding {
+        padding-left:40px;
+    }
+
 	.custom-logo {
-		max-width: 210px;
+		max-width: 400px;
 	}
 
 	.site-title {
@@ -2829,7 +2839,7 @@ p > video {
 	}
 
 	.site-main > article {
-		margin-bottom: 5.25em;
+		margin-bottom: 3.5em;
 	}
 
 	.entry-header,
@@ -2923,7 +2933,7 @@ p > video {
 	.comments-area,
 	.widget,
 	.content-bottom-widgets .widget-area {
-		margin-bottom: 5.25em;
+		margin-bottom: 3.5em;
 	}
 
 	.sidebar,
@@ -2970,6 +2980,10 @@ p > video {
 		-ms-flex-align: start;
 		align-items: flex-start;
 	}
+
+    .site-branding {
+        padding-left:0px;
+    }
 
 	.wp-custom-logo .site-header-main {
 		-webkit-align-items: center;
@@ -3386,9 +3400,9 @@ p > video {
 	}
 
 	.widecolumn {
-		padding-right: 15%;
-		padding-left: 15%;
-	}
+        padding-right: 15%;
+        padding-left: 15%;
+    }
 }
 
 
@@ -3398,7 +3412,7 @@ p > video {
 
 @media screen and (min-width: 61.5625em) {
 	.site-main {
-		margin-bottom: 7.0em;
+		margin-bottom: 3.5em;
 	}
 
 	.site-header {
@@ -3413,7 +3427,7 @@ p > video {
 	}
 
 	.custom-logo {
-		max-width: 240px;
+		max-width: 400px;
 	}
 
 	.image-navigation {
@@ -3433,7 +3447,7 @@ p > video {
 	}
 
 	.site-main > article {
-		margin-bottom: 7.0em;
+		margin-bottom: 3.5em;
 	}
 
 	.entry-title {
@@ -3529,7 +3543,7 @@ p > video {
 	.sidebar,
 	.content-bottom-widgets .widget-area,
 	.widecolumn {
-		margin-bottom: 7.0em;
+		margin-bottom: 3.5em;
 	}
 
 	body:not(.search-results) .entry-summary {
