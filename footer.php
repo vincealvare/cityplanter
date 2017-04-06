@@ -14,7 +14,8 @@
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="site-info">
-                <span>814 N 4th St. Philadelphia PA 19123<br />Open Every Day 10-6<br />215.627.6169</span>
+                <p>814 N 4th St. Philadelphia PA 19123</p>
+                <p>&copy; 2017 City Planter, LLC<br />Site developed by <a href="http://www.vincealvare.com" target="_blank">Vince Alvare</a></p>
 			</div><!-- .site-info -->
 		</footer><!-- .site-footer -->
 	</div><!-- .site-inner -->
